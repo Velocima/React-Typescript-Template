@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/Velocima/React-Typescript-Template/issues"
   },
-  "homepage": "https://github.com/Velocima/React-Typescript-Template#readme"
+  "homepage": "https://github.com/Velocima/React-Typescript-Template#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.22",
+    "@types/react-dom": "^17.0.9",
+    "typescript": "^4.4.3"
+  }
 }
