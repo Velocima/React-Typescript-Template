@@ -26,84 +26,51 @@ npm install
 
 **Available scipts:**
 
-<table>
-
-<tr>
-<td>Script</td>
-<td>Description</td>
-</tr>
-
-<tr>
-<td>
+Run the dev server at [http://localhost:8080/](http://localhost:8080/)
 
 ```sh
 npm run dev
 ```
 
-</td>
-<td>
-  
-Run the dev server at [http://localhost:8080/](http://localhost:8080/)
+---
 
-</td>
-</tr>
-
-<tr>
-<td>
+Build the app to the `build` folder
 
 ```sh
 npm run build
 ```
 
-</td>
-<td>Build the app to the `build` folder</td>
-</tr>
+---
 
-<tr>
-<td>
+Run all test suites
 
 ```sh
 npm test
 ```
 
-</td>
-<td>Run all test suites</td>
-</tr>
+---
 
-<tr>
-<td>
+Generate test coverage report
 
 ```sh
 npm run coverage
 ```
 
-</td>
-<td>Generate test coverage report</td>
-</tr>
+---
 
-<tr>
-<td>
+Highlight and attempt to fix all linting errors
 
 ```sh
 npm run lint
 ```
 
-</td>
-<td>Highlight and attempt to fix all linting errors</td>
-</tr>
+---
 
-<tr>
-<td>
+Format all files with prettier
 
 ```sh
 npm run format
 ```
-
-</td>
-<td>Format all files with prettier</td>
-</tr>
-
-</table>
 
 ## Bugs
 
