@@ -41,7 +41,11 @@ npm run dev
 ```
 
 </td>
-<td>Run the dev server at [http://localhost:8080/](http://localhost:8080/)</td>
+<td>
+  
+Run the dev server at [http://localhost:8080/](http://localhost:8080/)
+
+</td>
 </tr>
 
 <tr>
