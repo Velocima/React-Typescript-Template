@@ -1,14 +1,24 @@
 module.exports = {
+	env: {
+		browser: true,
+		node: true,
+	},
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 2020,
 		sourceType: 'module',
+		project: './tsconfig.json',
+		tsconfigRootDir: './',
 	},
-	plugins: ['prettier'],
+	plugins: ['prettier', 'testing-library', '@typescript-eslint', 'import'],
 	settings: {
 		react: {
 			version: 'detect',
 		},
+	},
+	globals: {
+		render: 'writable',
+		userEvent: 'writable',
 	},
 	ignorePatterns: ['.eslintrc.js', 'node_modules', 'build'],
 	extends: [
@@ -21,7 +31,15 @@ module.exports = {
 		'plugin:import/typescript',
 		'plugin:jsx-a11y/recommended',
 		'plugin:eslint-comments/recommended',
+		'plugin:testing-library/react',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/recommended-requiring-type-checking',
 	],
+	settings: {
+		'import/resolver': {
+			typescript: {},
+		},
+	},
 	rules: {
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': ['error'],
@@ -43,6 +61,7 @@ module.exports = {
 				useTabs: true,
 				bracketSpacing: true,
 				arrowParens: 'always',
+				endOfLine: 'auto',
 			},
 			{ usePrettierrc: true },
 		],
